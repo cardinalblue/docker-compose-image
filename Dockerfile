@@ -1,4 +1,4 @@
-FROM docker:18.05.0-ce-git
-RUN apk add --no-cache py2-pip tar && \
+FROM docker:18.09-git
+RUN apk add --no-cache py2-pip tar make && \
     pip install docker-compose
 CMD sh
