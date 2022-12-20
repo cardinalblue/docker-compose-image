@@ -1,4 +1,3 @@
-FROM docker:18.09-git
-RUN apk add --no-cache py2-pip tar make && \
-    pip install docker-compose
+FROM docker:20.10-git
+RUN apk add --no-cache tar make docker-compose
 CMD sh
